@@ -3,15 +3,15 @@
   <head>
     <title>HTML Form</title>
   </head>
+  <!--6-9 11-14 32-35-->
   <body>
     <h1>Coding Form!</h1>
     <form>
-      <p>Email: <br />
-        <label>
-          <input type="text" name="Email" size="15" maxlength="30">
-        </label>
+      <label for="email">Email: <br />
+        <input type="text" name="Email" size="15" maxlength="30">
+      </label>
       </p>
-      <p>Why is coding cool?</p>
+      <label for="reason">Why is coding cool?</label>
       <select name="reasons">
         <option value="Select an option">Select an option</option>
         <option value="Because it's interesting">Because it's interesting</option>
@@ -32,7 +32,7 @@
       <label>
         <input type="checkbox" name="signup" value="signmeup"> Sign me up!
       </label>
-      <p>Comments</p>
+      <label for="comment">Comments</label>
       <textarea name="comments" cols="20" rows="10"></textarea>
       <br /><input type="submit" value="Submit">
     </form>
