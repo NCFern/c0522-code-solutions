@@ -1,0 +1,21 @@
+.custom-button {
+  color: blue;
+  cursor: pointer;
+}
+
+.custom-button:hover {
+  background-color: orange;
+}
+
+thead {
+  color: rgb(255 255 255);
+  background-color: black;
+}
+
+tr.even {
+  background-color: #9d00ff;
+}
+
+tr.odd {
+  background-color: yellow;
+}
