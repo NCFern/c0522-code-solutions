@@ -27,18 +27,26 @@ select {
   font-style: normal;
   font-weight: 300;
   border-radius: 5px;
-  border-color: #aaaead;
+  border-color: lightgray;
   margin-top: 3px;
   margin-bottom: 15px;
+  border-style: groove;
+  border-width: 0.5px;
 }
 
 select {
   background-color: #f3f3f3;
 }
 
-div {
+button {
   text-align: right;
   background-color: #ec5e57;
-  size: 45px;
+  size: 100px;
   color: white;
+  border-radius: 1000px 900px;
+  border-style: unset;
+  font-family: "Brandon Grotesque", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  padding: 10px;
 }
