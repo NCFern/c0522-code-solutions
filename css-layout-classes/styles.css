@@ -6,14 +6,24 @@
 
 .row {
   display: flex;
-  column-width: auto;
-  flex-direction: row;
 }
 
-.column {
+.column-full {
+  width: 100%;
+}
+
+.column-one-third {
+  width: 33%;
+}
+
+.column-one-fourth {
+  width: 25%;
+}
+
+.column-two-third {
   width: 66%;
 }
 
-img {
+.chara {
   width: 100%;
 }
