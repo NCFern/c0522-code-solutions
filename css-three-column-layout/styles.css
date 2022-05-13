@@ -26,13 +26,14 @@ body {
 
 .health {
   background-color: white;
-  justify-content: center;
+  justify-content: center; /* ? */
   padding: 40px;
   margin: 100px;
-  width: 300px;
-  height: 300px;
+  width: 300px; /* ? */
+  height: 300px; /* ? */
   border-radius: 50%;
   flex-basis: auto;
+  color: transparent;
 }
 
 h1 {
