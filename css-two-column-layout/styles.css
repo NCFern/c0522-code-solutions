@@ -19,15 +19,19 @@ body {
 }
 
 .column {
-  height: 350px;
-  width: 350px;
+  height: 50%;
+  width: 50%;
 }
 
-.column-text > .column {
+.column-text {
+  justify-content: right;
+  align-items: right;
   width: 66%;
 }
 
-.column-picture > .column {
+.column-picture {
+  justify-content: left;
+  align-items: left;
   width: 33%;
 }
 
