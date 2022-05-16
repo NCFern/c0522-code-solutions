@@ -33,6 +33,7 @@ var isSparta = headCount === '300';
 console.log('value of isSparta', isSparta);
 console.log('type of isSparta', typeof isSparta);
 
-var motto = fullName + ' ' + 'is the GOAT';
+var motto = fullName;
+motto += ' is the GOAT';
 console.log('value of motto:', motto);
 console.log('type of motto:', typeof motto);
