@@ -18,7 +18,7 @@ body {
   flex-wrap: wrap;
 }
 
-.column {
+.column-half {
   height: 50%;
   width: 50%;
 }
@@ -32,7 +32,11 @@ body {
 .column-picture {
   justify-content: left;
   align-items: left;
-  width: 33%;
+  width: 40%;
+}
+
+.row-content {
+  display: flex;
 }
 
 .column-full {
