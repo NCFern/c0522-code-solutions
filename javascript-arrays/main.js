@@ -16,16 +16,13 @@ console.log('colors', colors);
 
 var students = ['Leonardo', 'Donatello', 'Raphael', 'Michaelangelo'];
 
-var numberOfStudents;
-numberOfStudents = students.length;
+var numberOfStudents = students.length;
 
 console.log('There are ' + numberOfStudents + ' students in the class');
 
-var lastIndex;
-lastIndex = numberOfStudents - 1;
+var lastIndex = numberOfStudents - 1;
 
-var lastStudent;
-lastStudent = students[lastIndex];
+var lastStudent = students[lastIndex];
 console.log('The last student in the array is', lastStudent);
 
 console.log('students', students);
