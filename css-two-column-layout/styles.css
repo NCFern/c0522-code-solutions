@@ -10,7 +10,7 @@ body {
   margin-right: auto;
 }
 
-.row2 {
+.body {
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -41,7 +41,7 @@ body {
   display: flex;
 }
 
-.column-full {
+.full {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
