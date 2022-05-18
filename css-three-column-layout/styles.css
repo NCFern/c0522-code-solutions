@@ -21,7 +21,7 @@ body {
 }
 
 .column-one-third {
-  width: 33%;
+  width: 30%;
   padding: 30px;
 }
 
@@ -33,12 +33,11 @@ h1 {
 h2 {
   padding: 7px;
   text-align: center;
-  font-size: 29px;
+  font-size: 30px;
 }
 
 p {
   padding: 30px;
-  text-align: center;
   font-size: 25px;
   line-height: 39px;
 }
@@ -57,4 +56,8 @@ p {
 .health {
   height: 100px;
   width: 100px;
+}
+
+.padding {
+  padding: 20px;
 }
