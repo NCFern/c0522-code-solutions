@@ -25,19 +25,19 @@ body {
   padding: 20px 50px;
 }
 
-.column-text {
+.content-text {
   justify-content: right;
   align-items: right;
   width: 66%;
 }
 
-.column-picture {
+.content-picture {
   justify-content: left;
   align-items: left;
   width: 40%;
 }
 
-.row-content {
+.content-box {
   display: flex;
 }
 
