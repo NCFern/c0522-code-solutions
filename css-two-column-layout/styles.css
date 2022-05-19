@@ -10,7 +10,7 @@ body {
   margin-right: auto;
 }
 
-.body {
+.content {
   display: flex;
   align-items: center;
   justify-content: flex-start;
