@@ -5,41 +5,42 @@ body {
 }
 
 .container {
-  max-width: 1100px;
+  max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
 }
 
 .row {
   display: flex;
+  justify-content: space-evenly;
 }
 
 .column-full {
   justify-content: center;
   text-align: center;
-  padding: 20px;
+  padding: 15px;
 }
 
 .column-one-third {
-  width: 30%;
-  padding: 30px;
+  width: calc(100%/ 3);
+  padding: 10px;
 }
 
 h1 {
   text-align: center;
-  font-size: 36px;
+  font-size: 45px;
+  margin-top: 100px;
 }
 
 h2 {
-  padding: 7px;
   text-align: center;
-  font-size: 30px;
+  font-size: 35px;
 }
 
 p {
-  padding: 30px;
   font-size: 25px;
-  line-height: 39px;
+  line-height: 35px;
+  text-align: center;
 }
 
 .circle {
@@ -54,10 +55,14 @@ p {
 }
 
 .health {
-  height: 100px;
-  width: 100px;
+  height: 120px;
+  width: 120px;
 }
 
 .padding {
-  padding: 20px;
+  padding: 15px;
+}
+
+.margin-top {
+  margin-top: 70px;
 }
