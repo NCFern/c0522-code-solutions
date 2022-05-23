@@ -11,7 +11,7 @@ function isUpperCased(word) {
   if (word !== word.charAt(0).toUpperCase()) {
     return false;
   }
-  if (word === word.charAt(0).toUpperCase()) {
+  if (word !== word.charAt(0).toLowerCase()) {
     return true;
   }
   return capital;
