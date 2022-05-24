@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+main {
+  background-color: #fef9f1;
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.bulb-on {
+  background-color: #faea84;
+  display: flex;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  flex-basis: calc(100% / 3);
+  box-shadow: 0 0 21px 14px rgb(243 255 161 / 81%);
+  border-color: transparent;
+}
+
+.bulb-off {
+  background-color: #111;
+  display: flex;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  flex-basis: calc(100% / 3);
+  box-shadow: 0 0 21px 14px rgb(243 255 161 / 81%);
+  border-color: transparent;
+}
