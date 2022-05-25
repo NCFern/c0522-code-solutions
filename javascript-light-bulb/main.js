@@ -10,14 +10,14 @@
 
 var button = document.querySelector('.bulb-on');
 var ground = document.querySelector('.background-on');
-var userClicks = 0;
+var userClicked = true;
 
 function lightSwitch(event) {
-  userClicks++;
-  if (userClicks % 2 === 0) {
+  userClicked = !userClicked;
+  if (userClicked) {
     button.className = 'bulb-on';
     ground.className = 'background-on';
-  } else if (userClicks % 2 !== 0) {
+  } else {
     button.className = 'bulb-off';
     ground.className = 'background-off';
   }
