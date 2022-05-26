@@ -11,10 +11,9 @@ function taskManager(event) {
   console.log('event.target.tagName', event.target.tagName);
 }
 
-var $doneButton = document.querySelector('.Done');
+// if (event.target.tagName === 'BUTTON') {
+// }
 
-$doneButton.addEventListener('click', completeTask);
-
-function completeTask(event) {
-  // if event.target = $doneButton, remove () + log .task.list.item //
-}
+// var $task-list-item = event.target.closest('.task-list-item');
+// console.log (.task-list-item);
+// $task-list-item.remove();
