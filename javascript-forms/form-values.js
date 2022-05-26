@@ -3,22 +3,18 @@
 // query the DOM for the contact form //
 // make add event listener for 'submit' event //
 
+var contactForm = document.querySelector('#contact-form');
+
 function handleContact(event) {
   event.preventDefault();
-  //  document.elements.name.value; //
-  // var name = contactForm.elements.name.value;
-  // var email = contactForm.elements.email.value;
-  // var message = contactForm.elements.message.value;
-  // var formFull = {
-  //   name: name,
-  //   email: email,
-  //   message: message,
-  // };
+  var formFull = {
+    name: contactForm.elements.name.value,
+    email: contactForm.elements.email.value,
+    message: contactForm.elements.message.value
+  };
 
-  // console.log('formFull', formFull);
-  handleContact.reset();
+  console.log('formFull', formFull);
+  contactForm.reset();
 }
-
-var contactForm = document.querySelector('#contact-form');
 
 contactForm.addEventListener('submit', handleContact);
