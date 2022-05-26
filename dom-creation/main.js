@@ -1,13 +1,4 @@
 /* exported pokedex */
-// function renderPokemon(pokemon) {
-
-//   var newDiv = document.createElement('div');
-//   var newText = document.createTextNode('pokemon');
-//   newDiv.appendChild(newText);
-//   var currentDiv = document.createElementbyId('row');
-//   document.body.insertBefore(newDiv, currentDiv);
-
-// }
 
 var pokedex = [
   {
@@ -66,119 +57,47 @@ var pokedex = [
   }
 ];
 
-//   <div class="column-third">
-//     <div class="pokemon-card">
-//       <img src="images/bulbasaur.png">
-//       <div class="pokemon-card-text">
-//         <h2>Bulbasaur</h2>
-//         <h3>#001</h3>
-//         <p>
-//           There is a plant seed on its back right from the day this Pokémon is born. The seed slowly grows larger.
-//         </p>
-//       </div>
-//     </div>
-//   </div>
+function renderPokemon(pokemon) {
 
-//   <div class="column-third">
-//     <div class="pokemon-card">
-//       <img src="images/charmander.png">
-//       <div class="pokemon-card-text">
-//         <h2>Charmander</h2>
-//         <h3>#004</h3>
-//         <p>
-//           It has a preference for hot things. When it rains, steam is said to spout from the tip of its tail.
-//         </p>
-//       </div>
-//     </div>
-//   </div>
+  var $pokemonColumn = document.createElement('div');
+  $pokemonColumn.setAttribute('class', 'column-third');
 
-//   <div class="column-third">
-//     <div class="pokemon-card">
-//       <img src="images/squirtle.png">
-//       <div class="pokemon-card-text">
-//         <h2>Squirtle</h2>
-//         <h3>#007</h3>
-//         <p>
-//           When it retracts its long neck into its shell, it squirts out water with vigorous force.
-//         </p>
-//       </div>
-//    </div>
-//   </div>
+  var $pokemonCard = document.createElement('div');
+  $pokemonCard.setAttribute('class', 'pokemon-card');
 
-//   <div class="column-third">
-//     <div class="pokemon-card">
-//       <img src="images/ivysaur.png">
-//       <div class="pokemon-card-text">
-//         <h2>Ivysaur</h2>
-//         <h3>#002</h3>
-//         <p>
-//           When the bulb on its back grows large, it appears to lose the ability to stand on its hind legs.
-//         </p>
-//       </div>
-//     </div>
-//   </div>
+  var $pokemonImage = document.createElement('img');
+  $pokemonImage.setAttribute('src', pokemon.imageUrl);
 
-//  <div class="column-third">
-//     <div class="pokemon-card">
-//       <img src="images/charmeleon.png">
-//       <div class="pokemon-card-text">
-//         <h2>Charmeleon</h2>
-//         <h3>#005</h3>
-//         <p>
-//           It has a barbaric nature. In battle, it whips its fiery tail around and slashes away with sharp claws.
-//         </p>
-//       </div>
-//     </div>
-//   </div>
+  var $pokemonInfo = document.createElement('div');
+  $pokemonInfo.setAttribute('class', 'pokemon-card-text');
 
-//    <div class="column-third">
-//     <div class="pokemon-card">
-//       <img src="images/wartortle.png">
-//       <div class="pokemon-card-text">
-//         <h2>Wartortle</h2>
-//         <h3>#008</h3>
-//         <p>
-//           It is recognized as a symbol of longevity. If its shell has algae on it, that Wartortle is very old.
-//         </p>
-//       </div>
-//     </div>
-//   </div>
+  var $pokemonName = document.createElement('h2');
+  $pokemonName.textContent = pokemon.name;
 
-//   <div class="column-third">
-//     <div class="pokemon-card">
-//       <img src="images/veunsaur.png">
-//       <div class="pokemon-card-text">
-//         <h2>Venusaur</h2>
-//         <h3>#003</h3>
-//         <p>
-//           Its plant blooms when it is absorbing solar energy. It stays on the move to seek sunlight.
-//         </p>
-//       </div>
-//     </div>
-//   </div>
+  var $pokemonNumber = document.createElement('h3');
+  $pokemonNumber.textContent = pokemon.number;
 
-//   <div class="column-third">
-//     <div class="pokemon-card">
-//       <img src="images/charizard.png">
-//       <div class="pokemon-card-text">
-//         <h2>Charizard</h2>
-//         <h3>#006</h3>
-//         <p>
-//           It spits fire that is hot enough to melt boulders. It may cause forest fires by blowing flames.
-//         </p>
-//       </div>
-//     </div>
-//   </div>
+  var $pokemonDesc = document.createElement('p');
+  $pokemonDesc.textContent = pokemon.description;
 
-//   <div class="column-third">
-//     <div class="pokemon-card">
-//       <img src="images/blastoise.png">
-//       <div class="pokemon-card-text">
-//         <h2>Blastoise</h2>
-//         <h3>#009</h3>
-//         <p>
-//           It crushes its foe under its heavy body to cause fainting. In a pinch, it will withdraw inside its shell.
-//         </p>
-//       </div>
-//     </div>
-//   </div>
+  $pokemonInfo.appendChild($pokemonName);
+
+  $pokemonInfo.appendChild($pokemonNumber);
+
+  $pokemonInfo.appendChild($pokemonDesc);
+
+  $pokemonCard.appendChild($pokemonImage);
+
+  $pokemonCard.appendChild($pokemonInfo);
+
+  $pokemonColumn.appendChild($pokemonCard);
+
+  return $pokemonColumn;
+
+}
+
+var $pokemonRow = document.querySelector('.row');
+for (var i = 0; i < pokedex.length; i++) {
+  var $pokemonCard = renderPokemon(pokedex[i]);
+  $pokemonRow.appendChild($pokemonCard);
+}
