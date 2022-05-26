@@ -1,15 +1,17 @@
-// use doc.querySelector to get modal button in html and assign to var //
-// have var userClicks that stores amount of clicks //
-// create a function openModal that opens pop-up //
-// div class empty to div class pop-up //
-// in pop-up, have button that exits out of modal //
-// everytime button is clicked, start the function //
-//  //
+// blue-modal-button switches modal-seen to modal-hidden //
+// modal-hidden goes to modal-seen by clicking red-no-button //
 
-var buttonModal = document.querySelector('.modal');
+var $blueOpen = document.querySelector('.blue-modal-button');
+var $redClose = document.querySelector('.red-no-button');
+var $fullModal = document.querySelector('.modal-seen');
 
 function openModal(event) {
-// code block stuffs //
+  $fullModal.className = 'modal-hidden';
 }
 
-buttonModal.addEventListener('click', openModal);
+function closeModal(event) {
+  $fullModal.className = 'modal-seen';
+}
+
+$blueOpen.addEventListener('click', openModal);
+$redClose.addEventListener('click', closeModal);
