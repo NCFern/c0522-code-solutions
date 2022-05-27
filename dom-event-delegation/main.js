@@ -9,11 +9,11 @@ $taskList.addEventListener('click', taskManager);
 function taskManager(event) {
   console.log('event.target', event.target);
   console.log('event.target.tagName', event.target.tagName);
+
+  if (event.target.tagName === 'BUTTON') {
+
+    var $closestItem = event.target.closest('.task-list-item');
+    console.log('closest .task-list-item: ', $closestItem);
+    $closestItem.remove();
+  }
 }
-
-// if (event.target.tagName === 'BUTTON') {
-// }
-
-// var $task-list-item = event.target.closest('.task-list-item');
-// console.log (.task-list-item);
-// $task-list-item.remove();
