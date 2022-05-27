@@ -1,33 +1,33 @@
 // query all of tab and view elements //
-// click event listener on .tab-container //
-// click event listener to parent element //
-// if statement to see if event.target === matches(.'tab') //
-// make loop of node list of tab elements and compare with event.target //
-// update event.target to include .active for active tab //
+// click event listener for tab container switching tabs //
+// if statement to see if event.target.matches('.tab') //
+// make loop of of switching from tab active to tab //
+// if staement to see if event.target.getAttribute('data-view') //
+// make loop of switching from view to view hidden //
 
-// var $tabContainer = document.querySelector('.tab-container');
+var $tabContainer = document.querySelector('.tab-container');
+var $tab = document.querySelectorAll('.tab');
+var $view = document.querySelectorAll('.view');
 
-// var $tabLanguage1 = document.querySelector('.tab.active');
-// var $tabLanguage2 = document.querySelector('.tab');
+$tabContainer.addEventListener('click', switchTabs);
 
-// var $viewContainer = document.querySelector('.view-container');
+function switchTabs(event) {
+  if (event.target.matches('.tab')) {
+    for (var i = 0; i < $tab.length; i++) {
+      if ($tab[i] === event.target) {
+        $tab[i].className = 'tab active';
+      } else if ($tab[i] !== event.target) {
+        $tab[i].className = 'tab';
+      }
+    }
 
-// var $viewSeen = document.querySelector('.view');
-// var $viewHidden = document.querySelector('.view hidden');
-
-// $tab-container.addEventListener('click', switchTabs);
-// if (event.target(.tab)) {
-// }
-
-// var $userClicked = true;
-
-// function switchTabs(event) {
-//   userClicked = !userClicked;
-//   if (userClicked) {
-//     tabLanguage1.className = 'tab-active';
-//     viewSeen.className = 'view';
-//   } else {
-//     tabLanguage2.className = 'tab';
-//     viewHidden.className = 'view-hidden';
-//   }
-// }
+    var $dataView = event.target.getAttribute('data-view');
+    for (var j = 0; j < $view.length; j++) {
+      if ($view[j].getAttribute('data-view') === $dataView) {
+        $view[j].className = 'view';
+      } else if ($view[j].getAttribute('data-view') !== $dataView) {
+        $view[j].className = 'view hidden';
+      }
+    }
+  }
+}
