@@ -1,18 +1,14 @@
 /* exported isUpperCased */
 // write a function that checks if the word is uppercased //
-// create a var that checks if entire word is capitalized//
-// if yes, return true //
-// if no, return false //
-// return output //
+// loop through each letter in array to see if it lowercased //
+// if lower case found, return false //
+// otherwise, return true //
 
-// function isUpperCased(word) {
-//   var capital = [];
-
-//   if (word !== word.charAt(0).toUpperCase()) {
-//     return false;
-//   }
-//   if (word !== word.charAt(0).toLowerCase()) {
-//     return true;
-//   }
-//   return capital;
-// }
+function isUpperCased(word) {
+  for (var i = 0; i < word.length; i++) {
+    if (word[i] === word[i].toLowerCase()) {
+      return false;
+    }
+  }
+  return true;
+}
