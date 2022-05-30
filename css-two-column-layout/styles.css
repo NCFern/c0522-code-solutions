@@ -10,12 +10,23 @@ body {
   margin-right: auto;
 }
 
+/* .row {
+
+} */
+
+.full {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}
+
 .content {
-  display: flex;
   align-items: center;
   justify-content: flex-start;
   flex-basis: auto;
   padding: 20px;
+  display: flex;
   flex-wrap: wrap;
 }
 
@@ -41,16 +52,19 @@ body {
   display: flex;
 }
 
-.full {
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  width: 60%;
-}
-
 h1 {
   letter-spacing: 4px;
   font-size: 300%;
+}
+
+h2 {
+  text-align: left;
+  font-size: 16px;
+}
+
+p {
+  line-height: 30px;
+  font-size: 15px;
 }
 
 .align-center {
@@ -63,14 +77,4 @@ button {
   border-color: #d14c44;
   border-style: solid;
   padding: 10px 30px;
-}
-
-h2 {
-  text-align: left;
-  font-size: 16px;
-}
-
-p {
-  line-height: 30px;
-  font-size: 15px;
 }
