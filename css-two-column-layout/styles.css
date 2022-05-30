@@ -10,9 +10,9 @@ body {
   margin-right: auto;
 }
 
-/* .row {
-
-} */
+.display-row {
+  display: flex;
+}
 
 .full {
   text-align: center;
@@ -21,12 +21,27 @@ body {
   width: 60%;
 }
 
-.content {
-  align-items: center;
-  justify-content: flex-start;
-  flex-basis: auto;
-  padding: 20px;
+.column-full {
   display: flex;
+}
+
+.align-items {
+  align-items: center;
+}
+
+.justify-content {
+  justify-content: flex-start;
+}
+
+.flex-basis {
+  flex-basis: auto;
+}
+
+.padding-content {
+  padding: 20px;
+}
+
+.flex-wrap {
   flex-wrap: wrap;
 }
 
