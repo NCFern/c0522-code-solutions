@@ -34,7 +34,7 @@ ul li {
   padding: 14px;
 }
 
-#blue-button {
+#blue-button-header {
   background-color: rgb(42 68 100);
   color: white;
   font-size: 15px;
@@ -85,7 +85,7 @@ a {
   align-items: left;
 }
 
-.blue-button {
+.blue-button-hero {
   background-color: rgb(42 68 100);
   color: white;
   font-size: 15px;
@@ -104,8 +104,21 @@ a {
   background-color: aquamarine;
   padding-top: 50px;
   margin-top: 50px;
+  padding-bottom: 50px;
 }
 
 .flex-wrap {
   flex-wrap: wrap;
+}
+
+.middle-model {
+  padding: 30px 40px;
+}
+
+.mid-button-adjust {
+  padding-top: 30px;
+}
+
+.align-right {
+  text-align: right;
 }
