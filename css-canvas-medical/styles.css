@@ -49,7 +49,7 @@ a {
 }
 
 .overlay {
-  background: rgb(255 255 255 / 90%);
+  background: rgb(0 0 0 / 20%);
   width: 100%;
   height: 100%;
 }
@@ -89,8 +89,23 @@ a {
   background-color: rgb(42 68 100);
   color: white;
   font-size: 15px;
-  padding: 15px 20px;
+  padding: 20px 50px;
   border-style: unset;
   border-radius: 6px;
-  margin-left: 40px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* background-color: rgb(250 250 250); */
+
+.clinic-box-model {
+  background-color: aquamarine;
+  padding-top: 50px;
+  margin-top: 50px;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
 }
