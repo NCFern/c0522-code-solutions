@@ -4,7 +4,7 @@
 // make new variable of empty string //
 // upper case first letter of string //
 // make for loop that starts at index 1 for string and lower case the rest of word //
-//
+// if statement to help us go through other strings in array //
 
 function capitalizeWords(string) {
   var capitalString = '';
