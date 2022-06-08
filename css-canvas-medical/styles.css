@@ -28,12 +28,6 @@
   width: 50%;
 }
 
-ul li {
-  display: inline-block;
-  font-size: 20px;
-  padding: 15px;
-}
-
 #blue-button-header {
   background-color: rgb(42 68 100);
   color: white;
@@ -43,9 +37,14 @@ ul li {
   border-radius: 6px;
 }
 
-a {
-  text-decoration: none;
-  color: lightgrey;
+.navi-list {
+  font-family: Avenir, sans-serif;
+  font-size: 20px;
+}
+
+ul li {
+  display: inline-block;
+  padding: 10px;
 }
 
 .overlay {
@@ -73,12 +72,15 @@ a {
 .hero-header {
   color: white;
   font-size: 40px;
+  font-weight: normal;
+  font-family: Tiempos, sans-serif;
 }
 
 .hero-text {
   color: white;
   line-height: 1.5;
   font-size: 20px;
+  font-family: Avenir, sans-serif;
 }
 
 .align-left {
@@ -98,13 +100,19 @@ a {
   text-align: center;
 }
 
-/* background-color: rgb(250 250 250); */
-
 .clinic-box-model {
-  background-color: aquamarine;
+  background-color: rgb(250 250 250);
   padding-top: 50px;
   margin-top: 50px;
   padding-bottom: 50px;
+}
+
+.clinic-header {
+  font-family: Tiempos, sans-serif;
+}
+
+.clinic-locations {
+  font-family: Avenir, sans-serif;
 }
 
 .flex-wrap {
@@ -125,6 +133,7 @@ a {
 
 .canvas-footer {
   background-color: rgb(82 83 81);
+  padding: 80px;
 }
 
 .canvas-text {
@@ -133,4 +142,12 @@ a {
 
 .column-one-fourth {
   width: 25%;
+}
+
+.footer-company {
+  color: white;
+}
+
+.footer-product {
+  color: white;
 }
